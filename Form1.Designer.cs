@@ -37,6 +37,7 @@
             this.backgroundButton = new System.Windows.Forms.Button();
             this.closeButton = new System.Windows.Forms.Button();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
+            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
             this.tableLayoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
@@ -52,11 +53,12 @@
             this.tableLayoutPanel1.Controls.Add(this.flowLayoutPanel1, 1, 1);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(982, 522);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(736, 424);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // pictureBox1
@@ -64,18 +66,20 @@
             this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.tableLayoutPanel1.SetColumnSpan(this.pictureBox1, 2);
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Location = new System.Drawing.Point(3, 3);
+            this.pictureBox1.Location = new System.Drawing.Point(2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(976, 463);
+            this.pictureBox1.Size = new System.Drawing.Size(732, 377);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(3, 472);
+            this.checkBox1.Location = new System.Drawing.Point(2, 383);
+            this.checkBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(70, 20);
+            this.checkBox1.Size = new System.Drawing.Size(60, 17);
             this.checkBox1.TabIndex = 1;
             this.checkBox1.Text = "Stretch";
             this.checkBox1.UseVisualStyleBackColor = true;
@@ -88,51 +92,59 @@
             this.flowLayoutPanel1.Controls.Add(this.closeButton);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(150, 472);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(112, 383);
+            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(829, 47);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(622, 39);
             this.flowLayoutPanel1.TabIndex = 2;
             // 
             // showButton
             // 
             this.showButton.AutoSize = true;
-            this.showButton.Location = new System.Drawing.Point(721, 3);
+            this.showButton.Location = new System.Drawing.Point(531, 2);
+            this.showButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.showButton.Name = "showButton";
-            this.showButton.Size = new System.Drawing.Size(105, 26);
+            this.showButton.Size = new System.Drawing.Size(89, 23);
             this.showButton.TabIndex = 0;
             this.showButton.Text = "Show a Picture";
             this.showButton.UseVisualStyleBackColor = true;
-            this.showButton.Click += new System.EventHandler(this.button1_Click);
+            this.showButton.Click += new System.EventHandler(this.showButton_Click);
             // 
             // clearButton
             // 
             this.clearButton.AutoSize = true;
-            this.clearButton.Location = new System.Drawing.Point(602, 3);
+            this.clearButton.Location = new System.Drawing.Point(433, 2);
+            this.clearButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.clearButton.Name = "clearButton";
-            this.clearButton.Size = new System.Drawing.Size(113, 26);
+            this.clearButton.Size = new System.Drawing.Size(94, 23);
             this.clearButton.TabIndex = 1;
             this.clearButton.Text = "Clear the picture";
             this.clearButton.UseVisualStyleBackColor = true;
+            this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
             // 
             // backgroundButton
             // 
             this.backgroundButton.AutoSize = true;
-            this.backgroundButton.Location = new System.Drawing.Point(430, 3);
+            this.backgroundButton.Location = new System.Drawing.Point(292, 2);
+            this.backgroundButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.backgroundButton.Name = "backgroundButton";
-            this.backgroundButton.Size = new System.Drawing.Size(166, 26);
+            this.backgroundButton.Size = new System.Drawing.Size(137, 23);
             this.backgroundButton.TabIndex = 2;
             this.backgroundButton.Text = "Set the background color";
             this.backgroundButton.UseVisualStyleBackColor = true;
+            this.backgroundButton.Click += new System.EventHandler(this.backgroundButton_Click);
             // 
             // closeButton
             // 
             this.closeButton.AutoSize = true;
-            this.closeButton.Location = new System.Drawing.Point(349, 3);
+            this.closeButton.Location = new System.Drawing.Point(232, 2);
+            this.closeButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.closeButton.Name = "closeButton";
-            this.closeButton.Size = new System.Drawing.Size(75, 26);
+            this.closeButton.Size = new System.Drawing.Size(56, 23);
             this.closeButton.TabIndex = 3;
             this.closeButton.Text = "Close";
             this.closeButton.UseVisualStyleBackColor = true;
+            this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
             // 
             // openFileDialog1
             // 
@@ -143,10 +155,11 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(982, 522);
+            this.ClientSize = new System.Drawing.Size(736, 424);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
             this.Text = "Picture Viewer";
             this.Load += new System.EventHandler(this.Form1_Load);
@@ -170,6 +183,7 @@
         private System.Windows.Forms.Button backgroundButton;
         private System.Windows.Forms.Button closeButton;
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
+        private System.Windows.Forms.ColorDialog colorDialog1;
     }
 }
 
