@@ -1,6 +1,6 @@
 ﻿namespace PictureViewer
 {
-    partial class Form1
+    partial class PictureViewerForm
     {
         /// <summary>
         /// Required designer variable.
@@ -58,7 +58,7 @@
             this.tableLayoutPanel1.RowCount = 2;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(736, 424);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(863, 548);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // pictureBox1
@@ -69,14 +69,14 @@
             this.pictureBox1.Location = new System.Drawing.Point(2, 2);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(732, 377);
+            this.pictureBox1.Size = new System.Drawing.Size(859, 489);
             this.pictureBox1.TabIndex = 0;
             this.pictureBox1.TabStop = false;
             // 
             // checkBox1
             // 
             this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(2, 383);
+            this.checkBox1.Location = new System.Drawing.Point(2, 495);
             this.checkBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(60, 17);
@@ -93,16 +93,16 @@
             this.flowLayoutPanel1.Controls.Add(this.closeButton);
             this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(112, 383);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(131, 495);
             this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(622, 39);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(730, 51);
             this.flowLayoutPanel1.TabIndex = 2;
             // 
             // showButton
             // 
             this.showButton.AutoSize = true;
-            this.showButton.Location = new System.Drawing.Point(531, 2);
+            this.showButton.Location = new System.Drawing.Point(639, 2);
             this.showButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.showButton.Name = "showButton";
             this.showButton.Size = new System.Drawing.Size(89, 23);
@@ -114,7 +114,7 @@
             // clearButton
             // 
             this.clearButton.AutoSize = true;
-            this.clearButton.Location = new System.Drawing.Point(433, 2);
+            this.clearButton.Location = new System.Drawing.Point(541, 2);
             this.clearButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.clearButton.Name = "clearButton";
             this.clearButton.Size = new System.Drawing.Size(94, 23);
@@ -126,7 +126,7 @@
             // backgroundButton
             // 
             this.backgroundButton.AutoSize = true;
-            this.backgroundButton.Location = new System.Drawing.Point(292, 2);
+            this.backgroundButton.Location = new System.Drawing.Point(400, 2);
             this.backgroundButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.backgroundButton.Name = "backgroundButton";
             this.backgroundButton.Size = new System.Drawing.Size(137, 23);
@@ -138,7 +138,7 @@
             // closeButton
             // 
             this.closeButton.AutoSize = true;
-            this.closeButton.Location = new System.Drawing.Point(232, 2);
+            this.closeButton.Location = new System.Drawing.Point(340, 2);
             this.closeButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.closeButton.Name = "closeButton";
             this.closeButton.Size = new System.Drawing.Size(56, 23);
@@ -158,7 +158,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(736, 424);
+            this.ClientSize = new System.Drawing.Size(863, 548);
             this.Controls.Add(this.tableLayoutPanel1);
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "Form1";
