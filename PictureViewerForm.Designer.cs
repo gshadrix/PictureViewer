@@ -28,163 +28,163 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.showButton = new System.Windows.Forms.Button();
-            this.clearButton = new System.Windows.Forms.Button();
-            this.backgroundButton = new System.Windows.Forms.Button();
-            this.closeButton = new System.Windows.Forms.Button();
-            this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.colorDialog1 = new System.Windows.Forms.ColorDialog();
-            this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            this.flowLayoutPanel1.SuspendLayout();
+            this.MainLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
+            this.ImageDisplayBox = new System.Windows.Forms.PictureBox();
+            this.StretchModeCheckBox = new System.Windows.Forms.CheckBox();
+            this.ButtonPanel = new System.Windows.Forms.FlowLayoutPanel();
+            this.ShowPictureButton = new System.Windows.Forms.Button();
+            this.ClearPictureButton = new System.Windows.Forms.Button();
+            this.SetBackgroundColorButton = new System.Windows.Forms.Button();
+            this.CloseFormButton = new System.Windows.Forms.Button();
+            this.PictureOpenFileDialog = new System.Windows.Forms.OpenFileDialog();
+            this.BackgroundColorDialog = new System.Windows.Forms.ColorDialog();
+            this.MainLayoutPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ImageDisplayBox)).BeginInit();
+            this.ButtonPanel.SuspendLayout();
             this.SuspendLayout();
             // 
-            // tableLayoutPanel1
+            // MainLayoutPanel
             // 
-            this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 85F));
-            this.tableLayoutPanel1.Controls.Add(this.pictureBox1, 0, 0);
-            this.tableLayoutPanel1.Controls.Add(this.checkBox1, 0, 1);
-            this.tableLayoutPanel1.Controls.Add(this.flowLayoutPanel1, 1, 1);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            this.tableLayoutPanel1.RowCount = 2;
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(863, 548);
-            this.tableLayoutPanel1.TabIndex = 0;
+            this.MainLayoutPanel.ColumnCount = 2;
+            this.MainLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 15F));
+            this.MainLayoutPanel.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 85F));
+            this.MainLayoutPanel.Controls.Add(this.ImageDisplayBox, 0, 0);
+            this.MainLayoutPanel.Controls.Add(this.StretchModeCheckBox, 0, 1);
+            this.MainLayoutPanel.Controls.Add(this.ButtonPanel, 1, 1);
+            this.MainLayoutPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.MainLayoutPanel.Location = new System.Drawing.Point(0, 0);
+            this.MainLayoutPanel.Margin = new System.Windows.Forms.Padding(2);
+            this.MainLayoutPanel.Name = "MainLayoutPanel";
+            this.MainLayoutPanel.RowCount = 2;
+            this.MainLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 90F));
+            this.MainLayoutPanel.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 10F));
+            this.MainLayoutPanel.Size = new System.Drawing.Size(863, 548);
+            this.MainLayoutPanel.TabIndex = 0;
             // 
-            // pictureBox1
+            // ImageDisplayBox
             // 
-            this.pictureBox1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.tableLayoutPanel1.SetColumnSpan(this.pictureBox1, 2);
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Location = new System.Drawing.Point(2, 2);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(859, 489);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
+            this.ImageDisplayBox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.MainLayoutPanel.SetColumnSpan(this.ImageDisplayBox, 2);
+            this.ImageDisplayBox.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ImageDisplayBox.Location = new System.Drawing.Point(2, 2);
+            this.ImageDisplayBox.Margin = new System.Windows.Forms.Padding(2);
+            this.ImageDisplayBox.Name = "ImageDisplayBox";
+            this.ImageDisplayBox.Size = new System.Drawing.Size(859, 489);
+            this.ImageDisplayBox.TabIndex = 0;
+            this.ImageDisplayBox.TabStop = false;
             // 
-            // checkBox1
+            // StretchModeCheckBox
             // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.Location = new System.Drawing.Point(2, 495);
-            this.checkBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(60, 17);
-            this.checkBox1.TabIndex = 1;
-            this.checkBox1.Text = "Stretch";
-            this.checkBox1.UseVisualStyleBackColor = true;
-            this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
+            this.StretchModeCheckBox.AutoSize = true;
+            this.StretchModeCheckBox.Location = new System.Drawing.Point(2, 495);
+            this.StretchModeCheckBox.Margin = new System.Windows.Forms.Padding(2);
+            this.StretchModeCheckBox.Name = "StretchModeCheckBox";
+            this.StretchModeCheckBox.Size = new System.Drawing.Size(60, 17);
+            this.StretchModeCheckBox.TabIndex = 1;
+            this.StretchModeCheckBox.Text = "Stretch";
+            this.StretchModeCheckBox.UseVisualStyleBackColor = true;
+            this.StretchModeCheckBox.CheckedChanged += new System.EventHandler(this.StretchModeCheckBox_CheckedChanged);
             // 
-            // flowLayoutPanel1
+            // ButtonPanel
             // 
-            this.flowLayoutPanel1.Controls.Add(this.showButton);
-            this.flowLayoutPanel1.Controls.Add(this.clearButton);
-            this.flowLayoutPanel1.Controls.Add(this.backgroundButton);
-            this.flowLayoutPanel1.Controls.Add(this.closeButton);
-            this.flowLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(131, 495);
-            this.flowLayoutPanel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(730, 51);
-            this.flowLayoutPanel1.TabIndex = 2;
+            this.ButtonPanel.Controls.Add(this.ShowPictureButton);
+            this.ButtonPanel.Controls.Add(this.ClearPictureButton);
+            this.ButtonPanel.Controls.Add(this.SetBackgroundColorButton);
+            this.ButtonPanel.Controls.Add(this.CloseFormButton);
+            this.ButtonPanel.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ButtonPanel.FlowDirection = System.Windows.Forms.FlowDirection.RightToLeft;
+            this.ButtonPanel.Location = new System.Drawing.Point(131, 495);
+            this.ButtonPanel.Margin = new System.Windows.Forms.Padding(2);
+            this.ButtonPanel.Name = "ButtonPanel";
+            this.ButtonPanel.Size = new System.Drawing.Size(730, 51);
+            this.ButtonPanel.TabIndex = 2;
             // 
-            // showButton
+            // ShowPictureButton
             // 
-            this.showButton.AutoSize = true;
-            this.showButton.Location = new System.Drawing.Point(639, 2);
-            this.showButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.showButton.Name = "showButton";
-            this.showButton.Size = new System.Drawing.Size(89, 23);
-            this.showButton.TabIndex = 0;
-            this.showButton.Text = "Show a Picture";
-            this.showButton.UseVisualStyleBackColor = true;
-            this.showButton.Click += new System.EventHandler(this.showButton_Click);
+            this.ShowPictureButton.AutoSize = true;
+            this.ShowPictureButton.Location = new System.Drawing.Point(639, 2);
+            this.ShowPictureButton.Margin = new System.Windows.Forms.Padding(2);
+            this.ShowPictureButton.Name = "ShowPictureButton";
+            this.ShowPictureButton.Size = new System.Drawing.Size(89, 23);
+            this.ShowPictureButton.TabIndex = 0;
+            this.ShowPictureButton.Text = "Show a Picture";
+            this.ShowPictureButton.UseVisualStyleBackColor = true;
+            this.ShowPictureButton.Click += new System.EventHandler(this.ShowPictureButton_Click);
             // 
-            // clearButton
+            // ClearPictureButton
             // 
-            this.clearButton.AutoSize = true;
-            this.clearButton.Location = new System.Drawing.Point(541, 2);
-            this.clearButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.clearButton.Name = "clearButton";
-            this.clearButton.Size = new System.Drawing.Size(94, 23);
-            this.clearButton.TabIndex = 1;
-            this.clearButton.Text = "Clear the picture";
-            this.clearButton.UseVisualStyleBackColor = true;
-            this.clearButton.Click += new System.EventHandler(this.clearButton_Click);
+            this.ClearPictureButton.AutoSize = true;
+            this.ClearPictureButton.Location = new System.Drawing.Point(541, 2);
+            this.ClearPictureButton.Margin = new System.Windows.Forms.Padding(2);
+            this.ClearPictureButton.Name = "ClearPictureButton";
+            this.ClearPictureButton.Size = new System.Drawing.Size(94, 23);
+            this.ClearPictureButton.TabIndex = 1;
+            this.ClearPictureButton.Text = "Clear the picture";
+            this.ClearPictureButton.UseVisualStyleBackColor = true;
+            this.ClearPictureButton.Click += new System.EventHandler(this.ClearPictureButton_Click);
             // 
-            // backgroundButton
+            // SetBackgroundColorButton
             // 
-            this.backgroundButton.AutoSize = true;
-            this.backgroundButton.Location = new System.Drawing.Point(400, 2);
-            this.backgroundButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.backgroundButton.Name = "backgroundButton";
-            this.backgroundButton.Size = new System.Drawing.Size(137, 23);
-            this.backgroundButton.TabIndex = 2;
-            this.backgroundButton.Text = "Set the background color";
-            this.backgroundButton.UseVisualStyleBackColor = true;
-            this.backgroundButton.Click += new System.EventHandler(this.backgroundButton_Click);
+            this.SetBackgroundColorButton.AutoSize = true;
+            this.SetBackgroundColorButton.Location = new System.Drawing.Point(400, 2);
+            this.SetBackgroundColorButton.Margin = new System.Windows.Forms.Padding(2);
+            this.SetBackgroundColorButton.Name = "SetBackgroundColorButton";
+            this.SetBackgroundColorButton.Size = new System.Drawing.Size(137, 23);
+            this.SetBackgroundColorButton.TabIndex = 2;
+            this.SetBackgroundColorButton.Text = "Set the background color";
+            this.SetBackgroundColorButton.UseVisualStyleBackColor = true;
+            this.SetBackgroundColorButton.Click += new System.EventHandler(this.SetBackgroundColorButton_Click);
             // 
-            // closeButton
+            // CloseFormButton
             // 
-            this.closeButton.AutoSize = true;
-            this.closeButton.Location = new System.Drawing.Point(340, 2);
-            this.closeButton.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.closeButton.Name = "closeButton";
-            this.closeButton.Size = new System.Drawing.Size(56, 23);
-            this.closeButton.TabIndex = 3;
-            this.closeButton.Text = "Close";
-            this.closeButton.UseVisualStyleBackColor = true;
-            this.closeButton.Click += new System.EventHandler(this.closeButton_Click);
+            this.CloseFormButton.AutoSize = true;
+            this.CloseFormButton.Location = new System.Drawing.Point(340, 2);
+            this.CloseFormButton.Margin = new System.Windows.Forms.Padding(2);
+            this.CloseFormButton.Name = "CloseFormButton";
+            this.CloseFormButton.Size = new System.Drawing.Size(56, 23);
+            this.CloseFormButton.TabIndex = 3;
+            this.CloseFormButton.Text = "Close";
+            this.CloseFormButton.UseVisualStyleBackColor = true;
+            this.CloseFormButton.Click += new System.EventHandler(this.CloseFormButton_Click);
             // 
-            // openFileDialog1
+            // PictureOpenFileDialog
             // 
-            this.openFileDialog1.FileName = "openFileDialog1";
-            this.openFileDialog1.Filter = "JPEG Files (*.jpg)|*.jpg|PNG Files (*.png)|*.png|BMP Files (*.bmp)|*.bmp|All file" +
+            this.PictureOpenFileDialog.FileName = "PictureOpenFileDialog";
+            this.PictureOpenFileDialog.Filter = "JPEG Files (*.jpg)|*.jpg|PNG Files (*.png)|*.png|BMP Files (*.bmp)|*.bmp|All file" +
     "s (*.*)|*.*";
-            this.openFileDialog1.Title = "Select a picture file";
+            this.PictureOpenFileDialog.Title = "Select a picture file";
             // 
-            // Form1
+            // PictureViewerForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(863, 548);
-            this.Controls.Add(this.tableLayoutPanel1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.Name = "Form1";
+            this.Controls.Add(this.MainLayoutPanel);
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Name = "PictureViewerForm";
             this.Text = "Picture Viewer";
-            this.Load += new System.EventHandler(this.Form1_Load);
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.tableLayoutPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            this.flowLayoutPanel1.ResumeLayout(false);
-            this.flowLayoutPanel1.PerformLayout();
+            this.Load += new System.EventHandler(this.PictureViewerForm_Load);
+            this.MainLayoutPanel.ResumeLayout(false);
+            this.MainLayoutPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ImageDisplayBox)).EndInit();
+            this.ButtonPanel.ResumeLayout(false);
+            this.ButtonPanel.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.Button showButton;
-        private System.Windows.Forms.Button clearButton;
-        private System.Windows.Forms.Button backgroundButton;
-        private System.Windows.Forms.Button closeButton;
-        private System.Windows.Forms.OpenFileDialog openFileDialog1;
-        private System.Windows.Forms.ColorDialog colorDialog1;
+        private System.Windows.Forms.TableLayoutPanel MainLayoutPanel;
+        private System.Windows.Forms.PictureBox ImageDisplayBox;
+        private System.Windows.Forms.CheckBox StretchModeCheckBox;
+        private System.Windows.Forms.FlowLayoutPanel ButtonPanel;
+        private System.Windows.Forms.Button ShowPictureButton;
+        private System.Windows.Forms.Button ClearPictureButton;
+        private System.Windows.Forms.Button SetBackgroundColorButton;
+        private System.Windows.Forms.Button CloseFormButton;
+        private System.Windows.Forms.OpenFileDialog PictureOpenFileDialog;
+        private System.Windows.Forms.ColorDialog BackgroundColorDialog;
     }
 }
 
