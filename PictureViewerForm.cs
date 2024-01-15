@@ -4,6 +4,8 @@ using System.Windows.Forms;
 namespace PictureViewer
 {
     /// <summary>
+    /// Stan Shadrix
+    /// CS 6232 Homework 1
     /// Represents the main form of the Picture Viewer application.
     /// </summary>
     public partial class PictureViewerForm : Form
