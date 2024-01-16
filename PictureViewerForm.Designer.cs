@@ -83,7 +83,7 @@
             this.StretchModeCheckBox.TabIndex = 1;
             this.StretchModeCheckBox.Text = "Stretch";
             this.StretchModeCheckBox.UseVisualStyleBackColor = true;
-            this.StretchModeCheckBox.CheckedChanged += new System.EventHandler(this.StretchModeCheckBox_CheckedChanged);
+            this.StretchModeCheckBox.CheckedChanged += new System.EventHandler(this.StretchModeCheckBoxCheckedChanged);
             // 
             // ButtonPanel
             // 
@@ -109,7 +109,7 @@
             this.ShowPictureButton.TabIndex = 0;
             this.ShowPictureButton.Text = "Show a Picture";
             this.ShowPictureButton.UseVisualStyleBackColor = true;
-            this.ShowPictureButton.Click += new System.EventHandler(this.ShowPictureButton_Click);
+            this.ShowPictureButton.Click += new System.EventHandler(this.ShowPictureButtonClick);
             // 
             // ClearPictureButton
             // 
@@ -121,7 +121,7 @@
             this.ClearPictureButton.TabIndex = 1;
             this.ClearPictureButton.Text = "Clear the picture";
             this.ClearPictureButton.UseVisualStyleBackColor = true;
-            this.ClearPictureButton.Click += new System.EventHandler(this.ClearPictureButton_Click);
+            this.ClearPictureButton.Click += new System.EventHandler(this.ClearPictureButtonClick);
             // 
             // SetBackgroundColorButton
             // 
@@ -133,7 +133,7 @@
             this.SetBackgroundColorButton.TabIndex = 2;
             this.SetBackgroundColorButton.Text = "Set the background color";
             this.SetBackgroundColorButton.UseVisualStyleBackColor = true;
-            this.SetBackgroundColorButton.Click += new System.EventHandler(this.SetBackgroundColorButton_Click);
+            this.SetBackgroundColorButton.Click += new System.EventHandler(this.SetBackgroundColorButtonClick);
             // 
             // CloseFormButton
             // 
@@ -145,7 +145,7 @@
             this.CloseFormButton.TabIndex = 3;
             this.CloseFormButton.Text = "Close";
             this.CloseFormButton.UseVisualStyleBackColor = true;
-            this.CloseFormButton.Click += new System.EventHandler(this.CloseFormButton_Click);
+            this.CloseFormButton.Click += new System.EventHandler(this.CloseFormButtonClick);
             // 
             // PictureOpenFileDialog
             // 
@@ -163,7 +163,7 @@
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "PictureViewerForm";
             this.Text = "Picture Viewer";
-            this.Load += new System.EventHandler(this.PictureViewerForm_Load);
+            this.Load += new System.EventHandler(this.PictureViewerFormLoad);
             this.MainLayoutPanel.ResumeLayout(false);
             this.MainLayoutPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ImageDisplayBox)).EndInit();
